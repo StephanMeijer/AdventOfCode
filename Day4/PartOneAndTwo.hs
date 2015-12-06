@@ -11,6 +11,10 @@ pch n = ch "ckczppom" n
 bwfz :: String -> Bool
 bwfz s = take 5 s == "00000"
 
-customHashes = [ ( x ) | x <- [0..], bwfz ( pch x ) ]
+bwsz :: String -> Bool
+bwsz s = take 6 s == "000000"
 
-main = print $ head customHashes
+chpo = [ ( x ) | x <- [0..], bwfz ( pch x ) ]
+chpt = [ ( x ) | x <- [0..], bwsz ( pch x ) ]
+
+main = print $ head chpt
