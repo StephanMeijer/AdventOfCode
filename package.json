@@ -1,0 +1,11 @@
+{
+  "name": "advent_of_code_stephanmeijer",
+  "version": "1.0.0",
+  "description": "My Advent Of Code results",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephanMeijer/AdventOfCode.git"
+  },
+  "author": "Stephan Meijer",
+  "license": "GPL-3.0",
+}
