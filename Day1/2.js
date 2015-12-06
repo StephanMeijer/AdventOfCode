@@ -4,10 +4,14 @@ var level = 0;
 
 for (var key in input) {
     var rawInstruction = input[key];
+    var position = (++key).toString();
 
     var instruction = ({ '(': 1, ')': -1 })[rawInstruction];
 
     level += instruction;
-}
 
-console.log(level);
+    if (level < 0) {
+        console.log(position);
+        break;
+    }
+}
