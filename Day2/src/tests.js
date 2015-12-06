@@ -1,10 +1,21 @@
 exports.calculateSquareFeetPaper = function(test) {
-    var cSFP  = require('./calculateSquareFeetPaper.js');
+    var cSFP = require('./calculateSquareFeetPaper.js');
 
     test.expect(2);
 
     test.equal(58, cSFP({ width: 2, length: 3, height: 4 }));
     test.equal(43, cSFP({ width: 1, length: 1, height: 10 }));
+
+    test.done();
+};
+
+exports.calculateSquareFeetRibbon = function(test) {
+    var cSFR = require('./calculateSquareFeetRibbon.js');
+
+    test.expect(2);
+
+    test.equal(34, cSFR({ width: 2, length: 3, height: 4 }));
+    test.equal(14, cSFR({ width: 1, length: 1, height: 10 }));
 
     test.done();
 };
