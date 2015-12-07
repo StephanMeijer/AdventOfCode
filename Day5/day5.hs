@@ -33,11 +33,6 @@ containsForbiddenStrings str = containsMultiple str [('a','b'), ('c','d'), ('p',
 isNiceString :: String -> Bool
 isNiceString str = (containsForbiddenStrings str) == False && twiceInRow str && (countVowels str) >= 3
 
--- Credits: Tom Smeding
-b2i :: Bool -> Int
-b2i False = 0
-b2i True = 1
-
 main :: IO ()
 main = do
     input <- readFile "input.txt"
